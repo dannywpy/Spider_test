@@ -1,6 +1,6 @@
 import json
 
-with open('city.txt', 'r',encoding='utf-8') as file:
+with open('../city.txt', 'r', encoding='utf-8') as file:
     file_content = file.read()
 
 data_list = file_content.split(', ')

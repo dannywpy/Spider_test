@@ -13,7 +13,7 @@ headers={
 
 pattern = re.compile(r"}\]\s*}\]\s*}\]")
 
-f = open('2021.csv', mode='w', encoding='utf-8', newline='')
+f = open('old/2021.csv', mode='w', encoding='utf-8', newline='')
 csv_writer = csv.DictWriter(f, fieldnames=[
         '城市',
         '项目',
@@ -27,7 +27,7 @@ csv_writer.writeheader()
 
 def open_file():
 # 打开Excel文件
-    workbook = openpyxl.load_workbook('test_2017.xlsx')
+    workbook = openpyxl.load_workbook('old/test_2017.xlsx')
 
     # 选择一个工作表
     worksheet = workbook['Sheet1']
